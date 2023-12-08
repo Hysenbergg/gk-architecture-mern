@@ -11,6 +11,17 @@ router.get('/all-projects', async (req, res) => {
     }
 })
 
+router.get('/:projectId', async (req, res) => {
+    const projectId = req.params.projectId;
+
+    try {
+        const project = await Project.findById(projectId);
+        res.status(200).json(project);
+    } catch (error) {
+        res.status(404).json(error);
+    }
+})
+
 router.post('/add-project', async (req, res) => {
     try {
         const newProject = new Project(req.body);
