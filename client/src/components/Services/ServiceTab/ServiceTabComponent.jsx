@@ -8,7 +8,7 @@ const ServiceTabComponent = () => {
   return (
     <div>
       <ServiceTabSmUltra selectService={selectService} setSelectedService={setSelectedService} />
-      <ServiceTabSm />
+      <ServiceTabSm selectService={selectService} setSelectedService={setSelectedService} />
     </div>
   );
 };
