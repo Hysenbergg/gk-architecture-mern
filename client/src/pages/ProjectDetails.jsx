@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import Footer from "../components/Footer/Footer";
 
 const ProjectDetails = () => {
@@ -62,7 +62,10 @@ const ProjectDetails = () => {
           navigation={{
             clickable: true,
           }}
-          modules={[Navigation]}
+          pagination={{
+            clickable: true
+          }}
+          modules={[Navigation, Pagination]}
           className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[500px]"
         >
           {project.images.map((item, index) => (

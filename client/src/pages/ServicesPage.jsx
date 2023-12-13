@@ -1,8 +1,11 @@
 import React from "react";
 import { MdMapsHomeWork } from "react-icons/md";
 import PageSplash from "../images/pageSplash.jpg";
+import ServiceTabComponent from "../components/Services/ServiceTab/ServiceTabComponent";
+import Footer from '../components/Footer/Footer';
 
 const ServicesPage = () => {
+
   return (
     <div>
       <div className="relative select-none">
@@ -18,6 +21,8 @@ const ServicesPage = () => {
           <span className="ml-3">Hizmetler</span>
         </div>
       </div>
+      <ServiceTabComponent />
+      <Footer />
     </div>
   );
 };
