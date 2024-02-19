@@ -24,7 +24,7 @@ const ProjectDetails = () => {
     const getProject = async () => {
       try {
         axios
-          .get("http://localhost:5000/api/projects/" + projectId)
+          .get(`${process.env.REACT_APP_SERVER_URL}/api/projects/` + projectId)
           .then((response) => {
             setProject(response.data);
           });
