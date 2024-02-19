@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.header-container {
+  z-index: 100 !important;
+}
+
+.header-container div {
+  z-index: 101 !important;
+}
